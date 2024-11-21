@@ -243,6 +243,9 @@ body {
     color: rgb(255, 255, 255);
     padding: 20px;
     position: relative;
+    background-size: cover;
+    background-position: center;
+   
   }
   
   /* Pseudo-elemento para la imagen de fondo con opacidad */
@@ -265,7 +268,25 @@ body {
       ), url('../img/fondo.png'); /* Imagen de fondo */
       background-size: cover;
       background-position: center;
+      animation: cambioFondoPaisaje 30s infinite; /* La animación solo afectará al fondo */
   }
+
+  /* Animación de cambio de fondo en la sección de fondo-paisaje */
+@keyframes cambioFondoPaisaje {
+    0% {
+      background-image: url('../img/fondo.png'); /* Fondo inicial */
+      opacity: 0.3;
+    }
+    50% {
+      background-image: url('../img/fondo2.png'); /* Segundo fondo */
+      opacity: 0.18;
+    }
+    100% {
+      background-image: url('../img/fondo.png'); /* Vuelve al primer fondo */
+      opacity: 0.32;
+    }
+  }
+  
 
  
   .titulo-fondo h1 {
