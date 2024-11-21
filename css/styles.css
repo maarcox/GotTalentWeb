@@ -291,7 +291,6 @@ body {
 @media (max-width: 768px) {
     .contenedor {
         padding: 20px; /* Reducir el padding en pantallas más pequeñas */
-        text-align: center;
     }
 
     .tarjetas {
@@ -308,7 +307,7 @@ body {
     .fondo-paisaje {
         flex-direction: column;
         width: 140%;
-        
+        height: auto;
     }
 
     .titulo-fondo h1 {
@@ -317,7 +316,7 @@ body {
     }
 
     .imagen-fondo-derecha img {
-        width: 85%;
+        width: 100%;
         height: auto;
     }
 
@@ -331,7 +330,7 @@ body {
 
     .tarjetas-adicionales {
         flex-direction: column;
-        width: 100%;
+        
         
     }
 }
@@ -339,7 +338,6 @@ body {
 @media (max-width: 480px) {
     .contenedor {
         padding: 10px;
-        text-align: center;
     }
 
     .tarjetas {
@@ -373,11 +371,8 @@ body {
 
     .tarjetas-adicionales {
         flex-direction: column;
-        gap: 10px;
     }
-    #servicios{
-        text-align: center;
-    }
+   
 
     .tarjeta {
         width: 100%;
