@@ -74,15 +74,17 @@ body {
     border-radius: 50%;
     position: relative;
     background: none;
-    border: 5px solid rgba(111, 233, 54, 0.2);
+    border: 5px solid rgba(197, 216, 188, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto 10px auto;
   }
+
   
   .circulo.completo {
-    border: 5px solid yellow;
+    
+    animation: cambioColor 10s infinite; /* La animación cambiará los colores */
   }
   
   .circulo::before {
@@ -95,8 +97,33 @@ body {
     border: 5px solid yellow;
     transform: rotate(calc(3.6deg * var(--nivel)));
     transform-origin: center;
+    animation: cambioColor 10s infinite; /* La animación cambiará los colores */
   }
   
+  /* Animación para cambiar el color de la parte llena del círculo */
+@keyframes cambioColor {
+    0% {
+      border-color: #6fe936; /* Verde fosforito sólido */
+      background-color: transparent;
+      transform: rotate(calc(3.6deg * var(--nivel))); /* Mantener el nivel inicial */
+    }
+    33% {
+      border-color: #ff00ff; /* Rosa fosforito sólido */
+      background-color: transparent;
+      transform: rotate(calc(3.6deg * var(--nivel))); /* Mantener el nivel inicial */
+    }
+    66% {
+      border-color: #00ffff; /* Azul fosforito sólido */
+      background-color: transparent;
+      transform: rotate(calc(3.6deg * var(--nivel))); /* Mantener el nivel inicial */
+    }
+    100% {
+      border-color: #6fe936; /* Regresa al verde fosforito sólido */
+      background-color: transparent;
+      transform: rotate(calc(3.6deg * var(--nivel))); /* Mantener el nivel inicial */
+    }
+  }
+
   .circulo span {
     position: absolute;
     color: white;
@@ -124,6 +151,7 @@ body {
     background-color: #555;
     border-radius: 5px;
     position: relative;
+    
   }
   
   .barra::after {
@@ -135,6 +163,23 @@ body {
     border-radius: 5px;
     top: 0;
     left: 0;
+    animation: cambioColorBarras 10s infinite; /* La animación cambiará el color de las barras */
+  }
+
+  /* Animación para cambiar el color de las barras */
+@keyframes cambioColorBarras {
+    0% {
+      background-color: #6fe936; /* Verde fosforito sólido */
+    }
+    33% {
+      background-color: #ff00ff; /* Rosa fosforito sólido */
+    }
+    66% {
+      background-color: #00ffff; /* Azul fosforito sólido */
+    }
+    100% {
+      background-color: #6fe936; /* Regresa al verde fosforito sólido */
+    }
   }
 /* Redes sociales - Posicionamiento fijo en la parte superior */
 .social-links {
