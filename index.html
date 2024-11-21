@@ -1,81 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Menú de navegación -->
-        <header>
-            <nav class="menu">
-                <div class="logo">Viajes</div>
-                <input type="checkbox" id="menu-toggle" class="menu-toggle">
-                <label for="menu-toggle" class="menu-icon">&#9776;</label>
-                <ul class="menu-links">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Destinos</a></li>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+  <!-- Rectángulo flotante para redes sociales -->
+  <div class="social-links">
+    <a href="#" class="icono">
+      <img src="img/LogoInstagram.webp" alt="LogoInstagram">
+    </a>
+    <a href="#" class="icono">
+      <img src="img/github.png" alt="LogoGithub">
+    </a>
+  </div>
 
-        <!-- Contenido principal -->
-        <main>
-            <!-- Galería de imágenes -->
-            <div class="slider">
-                <div class="slides">
-                    <input type="radio" name="slide" id="slide1" checked>
-                    <input type="radio" name="slide" id="slide2">
-                    <input type="radio" name="slide" id="slide3">
-                    <input type="radio" name="slide" id="slide4">
-
-                    <div class="slide s1">
-                        <img src="img/1.png" alt="Imagen 1">
-                    </div>
-                    <div class="slide s2">
-                        <img src="img/1.png" alt="Imagen 2">
-                    </div>
-                    <div class="slide s3">
-                        <img src="img/1.png" alt="Imagen 3">
-                    </div>
-                    <div class="slide s4">
-                        <img src="img/1.png" alt="Imagen 4">
-                    </div>
-
-                    <!-- Controles manuales -->
-                    <div class="navigation">
-                        <label for="slide1" class="manual-btn"></label>
-                        <label for="slide2" class="manual-btn"></label>
-                        <label for="slide3" class="manual-btn"></label>
-                        <label for="slide4" class="manual-btn"></label>
-                    </div>
-                </div>
-
-                <!-- Flechas -->
-                <div class="arrows">
-                    <label for="slide4" class="prev">&#10094;</label>
-                    <label for="slide2" class="next">&#10095;</label>
-                    <label for="slide1" class="prev">&#10094;</label>
-                    <label for="slide3" class="next">&#10095;</label>
-                    <label for="slide2" class="prev">&#10094;</label>
-                    <label for="slide4" class="next">&#10095;</label>
-                    <label for="slide3" class="prev">&#10094;</label>
-                    <label for="slide1" class="next">&#10095;</label>
-                </div>
+  <div class="contenedor">
+    <div class="tarjetas">
+        <div class="tarjeta-perfil">
+            <img src="img/yo5.png" alt="Foto de perfil">
+            <h2>Marcos Paniego López</h2>
+            <div class="informacion">
+              <div class="label">
+                <p class="resaltado">Residencia</p>
+                <p class="resaltado">Ciudad</p>
+                <p class="resaltado">Edad</p>
+              </div>
+              <div class="valor">
+                <p class="fino">España</p>
+                <p class="fino">Zaragoza</p>
+                <p class="fino">18</p>
+              </div>  
             </div>
-        </main>
-    </div>
-
-    <!-- Pie de página -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Viajes. Todos los derechos reservados.</p>
-            <p><a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a></p>
+            <div class="linea"></div>
+            <div class="idiomas">
+              <div class="idioma">
+                <div class="circulo completo">
+                  <span>100%</span>
+                </div>
+                <p>Español</p>
+              </div>
+              <div class="idioma">
+                <div class="circulo" style="--nivel: 70%;">
+                  <span>70%</span>
+                </div>
+                <p>Inglés</p>
+              </div>
+              <div class="idioma">
+                <div class="circulo" style="--nivel: 70%;">
+                  <span>70%</span>
+                </div>
+                <p>Francés</p>
+              </div>
+            </div>
+            <div class="linea"></div>
+            <div class="habilidades">
+              <div class="habilidad">
+                <p>HTML</p>
+                <div class="barra" style="--nivel: 90%;"></div>
+              </div>
+              <div class="habilidad">
+                <p>CSS</p>
+                <div class="barra" style="--nivel: 90%;"></div>
+              </div>
+              <div class="habilidad">
+                <p>Java</p>
+                <div class="barra" style="--nivel: 50%;"></div>
+              </div>
+              <div class="habilidad">
+                <p>AWS</p>
+                <div class="barra" style="--nivel: 60%;"></div>
+              </div>
+            
+            </div>
+          </div>
+          <!-- Nueva tarjeta con fondo de paisaje -->
+    <div class="tarjeta-fondo">
+        <div class="fondo-paisaje">
+          <!-- Título a la izquierda -->
+          <div class="titulo-fondo">
+            <h1>Marcos</h1>
+            <h1>Paniego López</h1>
+          </div>
+          <!-- Imagen a la derecha -->
+          <div class="imagen-fondo-derecha">
+            <img src="img/yo_fotoprincipal.png" alt="Mi Imagen">
+          </div>
         </div>
-    </footer>
+        <h2 id="servicios">Experiencia y Titulos Academicos</h2>
+          <!-- 3 Tarjetas adicionales -->
+    <div class="tarjetas-adicionales">
+        <div class="tarjeta">
+            <h3>Sistemas Microinformáticos y Redes</h3>
+            <p>Titulación de grado medio en Sistemas Microinformáticos y Redes</p>
+        </div>
+        <div class="tarjeta">
+            <h3>Desarrollo De Aplicaciones Multiplataforma</h3>
+            <p>Titulación de grado superior en desarrollo de aplicaciones multiplataforma</p>
+        </div>
+        <div class="tarjeta">
+            <h3>Experiencia Laboral</h3>
+            <p>Experiencia laboral la empresa Inzacard</p>
+        </div>
+    </div>
+      </div>
+    </div>
+    </div>
+  </div>
 </body>
 </html>
+
