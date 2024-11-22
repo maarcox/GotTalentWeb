@@ -287,6 +287,34 @@ body {
     }
   }
   
+/* Aseguramos que el enlace tenga suficiente espacio */
+.link-sobre-mi {
+  display: inline-block; /* Lo convertimos en un bloque para que ocupe toda la línea */
+  margin-top: 10px; /* Separación del nombre */
+  font-size: 18px; /* Tamaño de texto */
+  color: #e5e6e1; /* Color texto*/
+  text-decoration: none; /* Sin subrayado por defecto */
+  background-color: rgba(139, 145, 127, 0.507); /* Fondo*/
+  border: 2px solid rgba(144, 148, 137, 0.507); /* Borde  */
+  padding: 10px 60px; 
+  border-radius: 25px; /* Bordes redondeados */
+  margin-left: 120px;
+  text-align: center; /* Centrado */
+  position: relative; /* Aseguramos que el enlace esté por encima de otros elementos */
+  z-index: 10; /* Aseguramos que esté en una capa superior */
+}
+
+/* Estilo cuando pasamos el ratón por encima */
+.link-sobre-mi:hover {
+  color: #e5e6e1; /* Color azul */
+  background-color: rgba(76, 78, 72, 0.507); /* Fondo */
+  border: 2px solid rgba(76, 78, 72, 0.507); /* Borde */
+  color: #d9e8f8; /* Cambio de color */
+}
+
+
+
+
 
  
   .titulo-fondo h1 {
@@ -294,14 +322,24 @@ body {
     font-weight: bold;
     margin: 0;
     color: #fff;
+    padding-left: 120px; /* Ajusta la distancia hacia la derecha */
     position: relative;
-  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
   }
   
+  /* Contenedor de la imagen (a la derecha) */
+.imagen-fondo-derecha {
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente */
+  padding-right: 140px;
+  flex: 1; /* La imagen ocupará todo el espacio restante */
+  
+}
  /* Imagen a la derecha */
 .imagen-fondo-derecha img {
     width: 100%;
-    max-width: 550px; /* Ajusta el tamaño de la imagen */
+    max-width: 470px; /* Ajusta el tamaño de la imagen */
     height: 540px;
     object-fit: cover;
     position: relative;
@@ -384,6 +422,7 @@ body {
     .imagen-fondo-derecha img {
         width: 100%;
         height: auto;
+        padding-left: 140px;
     }
 
     .social-links {
@@ -426,8 +465,9 @@ body {
     }
 
     .imagen-fondo-derecha img {
-        width: 90%;
+        width: 100%;
         height: auto;
+       
     }
 
     .social-links {
